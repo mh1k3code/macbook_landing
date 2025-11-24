@@ -4,7 +4,7 @@ import {Canvas} from "@react-three/fiber";
 import {Box, OrbitControls} from "@react-three/drei";
 import MacbookModel14 from "./models/Macbook-14.jsx";
 import { useMediaQuery } from "react-responsive";
-import StudioLights from "./three/Studiolights";
+import Studiolights from "./three/Studiolights.jsx";
 import ModelSwitcher from './three/ModelSwitcher.jsx'
 
 
@@ -49,7 +49,7 @@ const ProductViewer = () => {
             </div>
 
             <Canvas id="canvas" camera={{ position: [0, 2, 5], fov: 50, near: 0.1, far: 100}}>
-                <StudioLights/>
+                <Studiolights/>
                 
                 <ModelSwitcher scale = {isMobile ? scale -0.03 : scale}/>
             </Canvas>
