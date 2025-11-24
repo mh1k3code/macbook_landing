@@ -1,6 +1,6 @@
 import { Environment, Lightformer } from "@react-three/drei"
 
-function Studiolights () {
+function StudioLights () {
     return (
         <group name="lights">
             <Environment resolution={256}>
@@ -39,4 +39,4 @@ function Studiolights () {
     )
 }
 
-export default Studiolights
+export default StudioLights
