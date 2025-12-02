@@ -1,6 +1,6 @@
 import {Canvas} from "@react-three/fiber";
 import {features, featureSequence} from "../constants/index.js";
-import StudioLights from "./three/Studiolights.jsx";
+import StudioLight from "./three/StudioLight.jsx";
 import clsx from "clsx";
 import {Suspense, useEffect, useRef} from "react";
 import {Html} from "@react-three/drei";
@@ -94,7 +94,7 @@ const Features = () => {
             <h2>See it all in a new light.</h2>
 
             <Canvas id="f-canvas" camera={{}}>
-                <StudioLights />
+                <StudioLight />
                 <ambientLight intensity={0.5} />
                 <ModelScroll />
             </Canvas>
